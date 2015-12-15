@@ -15,7 +15,7 @@
         "monolog/monolog": "~1.0"
     },
     "require-dev": {
-        "datto/json-rpc-simple": "~3.0"
+        "datto/json-rpc-simple": "~4.0"
     },
     "autoload": {
         "psr-4": {
