@@ -4,7 +4,7 @@ This is a logger extension for the [php-json-rpc](https://github.com/datto/php-j
 
 Examples
 --------
-To use the logged server, simply create a logger with a corresponding handler and pass it to a `Logger\Server` instance. In this example, we'll use Monolog's `SyslogHandler` and the `Simple\Evaluator` (see [php-json-rpc-simple](https://github.com/datto/php-json-rpc-simple)):
+To use the logged server, simply create a logger with a corresponding handler and pass it to a `Logger\Server` instance. In this example, we'll use Monolog's `SyslogHandler` and the `Simple\Evaluator` (see [php-json-rpc-simple](https://github.com/datto/php-json-rpc-simple)). This will log all requests and the responses to the system's syslog, typically found at `/var/log/syslog`:
 
 ```php
 <?php
@@ -21,8 +21,6 @@ $server = new Logged\Server(
 
 $server->reply('{"jsonrpc": "2.0", "method": "math/subtract", "params": [6, 2], "id": 1}');
 ```
-
-This will log all requests and the responses to the system's syslog, typically found at `/var/log/syslog`.
 
 Requirements
 ------------
