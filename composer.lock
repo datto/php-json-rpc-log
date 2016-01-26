@@ -178,7 +178,7 @@
             "version": "3.0.2",
             "source": {
                 "type": "git",
-                "url": "git@github-server.datto.lan:composerLib/php-json-rpc-simple.git",
+                "url": "git@github.com:datto/php-json-rpc-simple.git",
                 "reference": "25a733da85d8d5707ead7cebff71b1876243e768"
             },
             "require": {
